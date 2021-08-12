@@ -21,3 +21,20 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-family: sans-serif;
 }
+
+@media (max-width: 540px) {
+  .banner p {
+    font-size: 14px;
+  }
+  .banner{
+    height: 180px;
+  }
+
+  .btn-info{
+    padding: 5px;
+    font-size: 12px;
+  }
+  #banner-typed-text{
+    font-size: 24px;
+  }
+}

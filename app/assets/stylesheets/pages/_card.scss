@@ -36,12 +36,14 @@
 }
 
 .wrapper{
-	display: flex;
+	// display: flex;
 	width: 100%;
 	justify-content: space-around;
   align-content: center;
   border-radius: 3px;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card{
@@ -107,5 +109,19 @@
 			font-size: 11px;
 			margin-top: 8px;
       font-family: sans-serif;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-bottom: 30px;
+      width: 100%;
+      }
+    .card{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
     }
   }

@@ -9,3 +9,14 @@
       font-size: 40px;
     }
   }
+
+
+@media (max-width: 540px) {
+  .container-show h2{
+    font-size: 24px;
+  }
+  .btn-warning{
+    padding: 5px;
+    font-size: 12px;
+  }
+}
