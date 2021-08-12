@@ -1,0 +1,14 @@
+.container{
+    h1{
+      font-family: sans-serif;
+      font-style: italic;
+    }
+  }
+
+@media (max-width: 540px) {
+  .container{
+    h1{
+      font-size: 16px;
+    }
+  }
+}

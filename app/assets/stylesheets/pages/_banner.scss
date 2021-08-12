@@ -22,6 +22,13 @@
   font-family: sans-serif;
 }
 
+.btn-info{
+  color: white;
+  &:hover{
+    color: white;
+  }
+}
+
 @media (max-width: 540px) {
   .banner p {
     font-size: 14px;
