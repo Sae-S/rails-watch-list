@@ -1,19 +1,26 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), <%= image_tag "cinema.jpg" %>;">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://c4.wallpaperflare.com/wallpaper/418/48/974/movie-collage-wallpaper-preview.jpg');">
 
   <div class="container">
-    <h1>Movie Watch List</h1>
+    <h1>
+      <span id="banner-typed-text"></span>
+    </h1>
     <p>Organize your favorite movies in lists!</p>
     <%#= link_to 'Add a new list', new_list_path %>
-    <%= link_to 'Add a new list', new_list_path, class: "btn btn-primary"%>
+    <%= link_to 'Add a new list', new_list_path, class: "btn btn-info"%>
   </div>
 </div>
 
-<div class="container mt-5">
-  <div class="d-flex justify-content-around">
+<div class="container">
+  <div class="grid-container">
     <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%= link_to list.name , list_path(list) %>
+    <div class="grid-child">
+      <div class="container mt-5">
+        <div class="card-category" style="background-color">
+          <%= link_to list.name , list_path(list), class: "text-link" %>
+        </div>
+      </div>
     </div>
     <% end %>
   </div>
+</div>
 </div>

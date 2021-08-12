@@ -1,21 +1,22 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-  <div class="container">
-    <h1><%= @list.name%></h1>
-    <%= link_to 'Add a bookmark', new_list_bookmark_path(@list.id), class: "btn btn-primary"%>
+<%# <div class="banner" style="background-color: #292b2c;"> %>
+  <div class="container-show">
+    <h2><%= @list.name%></h2>
+    <%= link_to 'Add a bookmark', new_list_bookmark_path(@list.id), class: "btn btn-warning"%>
   </div>
-</div>
+<%# </div> %>
 
-<% @bookmarks.each do |bookmark| %>
-  <div class="card" style="width: 15rem;">
-    <img src="<%= bookmark.movie.poster_url %>" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title"><%= bookmark.movie.title%></h5>
-      <p class="card-text"><%= bookmark.movie.overview %></p>
-      <p class="card-text"><%= bookmark.comment %></p>
-      <%= link_to 'Remove', bookmark_path(bookmark), method: :delete, class: 'card-remove-link', data: { confirm: "Remove #{bookmark.movie.title}?"} %>
+
+<div class="wrapper">
+  <% @bookmarks.each do |bookmark| %>
+	<div class="card" style="width: 15rem;">
+		<img src="<%= bookmark.movie.poster_url %>">
+    <div class="info">
+			<h1><%= bookmark.movie.title%></h1>
+			<p><%= bookmark.movie.overview %></p>
+      <p>Rating: <%= bookmark.movie.rating %></p>
+      <p><%= bookmark.comment %></p>
+      <%= link_to 'Remove', bookmark_path(bookmark), method: :delete, class: 'card-remove-link', class: 'text-link', class: 'btn btn-warning mt-2', data: { confirm: "Remove #{bookmark.movie.title}?"} %>
     </div>
   </div>
-<%end%>
-
-
-  <%= link_to 'Back', lists_path %>
+  <%end%>
+</div>
