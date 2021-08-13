@@ -9,7 +9,7 @@ require 'open-uri'
 
 puts 'Cleaning the db...'
 Movie.destroy_all
-List.destroy_all
+# List.destroy_all
 
 Movie.create(title: "Wonder Woman 1984", overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s", poster_url: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg", rating: 6.9)
 Movie.create(title: "The Shawshank Redemption", overview: "Framed in the 1940s for double murder, upstanding banker Andy Dufresne begins a new life at the Shawshank prison", poster_url: "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg", rating: 8.7)
@@ -19,11 +19,11 @@ Movie.create(title: "Ponyo", overview: "Ponyo uses her father's magic to transfo
 Movie.create(title: "Black Panther", overview: "After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king.", poster_url: "https://i.pinimg.com/originals/b8/ce/c7/b8cec7d7e348590d72a70c9441fc73e5.jpg", rating: 9.0)
 puts "Created #{Movie.count} movies."
 
-List.create(name: "Action")
-List.create(name: "Comedy")
-List.create(name: "Romance")
-List.create(name: "Fantasy")
-puts "Created #{List.count} lists."
+# List.create(name: "Action")
+# List.create(name: "Comedy")
+# List.create(name: "Romance")
+# List.create(name: "Fantasy")
+# puts "Created #{List.count} lists."
 
 # file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
 # list = List.new(name: 'Action')
