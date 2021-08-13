@@ -15,14 +15,24 @@
   border-radius: 3px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.col-lg{
+  padding: 20px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 30px;
-}
+// .grid-child{
+//   align-items: center;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 
+// .grid-container {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     padding-bottom: 30px;
+// }
 .text-link {
   color:white;
   opacity: 0.7;
@@ -126,6 +136,8 @@
     }
     .grid-child{
       align-items: center;
+      margin-right: auto;
+      margin-left: auto;
     }
 }
 
@@ -142,6 +154,8 @@
     }
     .grid-child{
       align-items: center;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
@@ -165,5 +179,7 @@
     }
     .grid-child{
       align-items: center;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
