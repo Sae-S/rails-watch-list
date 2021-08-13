@@ -3,7 +3,7 @@
   background-position: center;
   background-color: #f0ad4e;
   height: 68px;
-  width: 188px;
+  width: 360px;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -123,5 +123,12 @@
       display: grid;
       grid-template-columns: 1fr;
       width: 100%;
+    }
+
+    .card-category{
+      width: 376px;
+    }
+    .grid-child{
+      align-items: center;
     }
   }
