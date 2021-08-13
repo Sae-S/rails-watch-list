@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri'
+
 puts 'Cleaning the db...'
 Movie.destroy_all
 List.destroy_all
@@ -22,3 +24,7 @@ List.create(name: "Comedy")
 List.create(name: "Romance")
 List.create(name: "Fantasy")
 puts "Created #{List.count} lists."
+
+# file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
+# list = List.new(name: 'Action')
+# list.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')

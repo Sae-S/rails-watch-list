@@ -30,11 +30,12 @@
 }
 
 @media (max-width: 540px) {
-  .banner p {
-    font-size: 14px;
-  }
+
   .banner{
     height: 180px;
+    p{
+      font-size: 14px;
+    }
   }
 
   .btn-info{
